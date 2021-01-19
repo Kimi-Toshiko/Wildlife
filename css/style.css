@@ -85,3 +85,34 @@ header {
     width: 23.31px;
     height: 23.31px;
 }
+
+.donation-info {
+    margin-top: 120px;
+    width: 274px;
+}
+
+.donation-info h2 {
+    font-size: 48px;
+    color: var(--orange-main);
+    line-height: 72px;
+    letter-spacing: 2px;
+}
+
+.donation-info p {
+    margin-top: 51px;
+    margin-bottom: 49px;
+    color: var(--font-light);
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.donation-info button {
+    width: 160px;
+    height: 60px;
+    background-color: var(--orange-main);
+    color: var(--font-light);
+    font-size: 23px;
+    line-height: 26.95px;
+    text-align: center;
+    border: none;
+}
