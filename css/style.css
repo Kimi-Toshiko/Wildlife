@@ -59,15 +59,28 @@ header {
 }
 
 .menu ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     height: 100%;
     align-items: center;
 }
 
 .menu ul li {
+    display: inline-block;
     margin-left: 61px;
+}
+
+.menu .simple-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: var(--font-light);
+    transition: .25s width linear;
+}
+
+.menu .simple-link:hover::after {
+    width: 30px;
+    transition: .25s width
 }
 
 .sign-in {
@@ -278,6 +291,11 @@ footer .container {
     display: flex;
     justify-content: center;
     align-content: center;
+    transition: .25s background-color linear;
+}
+
+.network:hover {
+    background-color: var(--orange-light);
 }
 
 .network a {
