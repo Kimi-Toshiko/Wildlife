@@ -20,6 +20,8 @@
 }
 
 
+
+
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -129,5 +131,122 @@ header {
 }
 
 .donation-info button:active {
+    background-color: var(--orange-dark);
+}
+
+main {
+    background-color: #CCC;
+}
+
+.articles {
+    padding-top: 120px;
+    padding-bottom: 240px;
+}
+
+.articles h2 {
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--font-dark);
+}
+
+.articles p {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--font-grey);
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    margin-bottom: 239px;
+}
+
+.deer {
+    background-image: url(../assets/imgs/deer.jpg);
+}
+
+.squirrel {
+    background-image: url(../assets/imgs/squirrell.jpg);
+}
+
+.bird {
+    background-image: url(../assets/imgs/bird.jpg);
+}
+
+.animal {
+    width: 300px;
+    height: 360px;
+}
+
+.info {
+    position: relative;
+    top: 250px;
+}
+
+.info h4 {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--font-light);
+}
+
+.info p {
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--font-light);
+}
+
+.articles-notification {
+    font-size: 27px;
+    line-height: 40.5px;
+    text-align: center;
+    color: var(--font-dark);
+    margin-bottom: 60px;
+}
+
+.send-mails {
+    display: flex;
+    justify-content: center;
+}
+
+.send-mails input {
+    padding: 15px;
+    width: 540px;
+    background-color: transparent;
+    border-color: var(--font-grey);
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    font-size: 23px;
+    line-height: 26.95px;
+    color: var(--font-grey);
+    transition: .25s border-color linear;
+}
+
+.send-mails input:invalid {
+    border-color: crimson;
+}
+
+.send-mails button {
+    width: 120px;
+    background-color: var(--orange-main);
+    color: var(--font-light);
+    font-size: 23px;
+    line-height: 26.95px;
+    border: none;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    transition: .25s background-color linear;
+}
+
+.send-mails button:hover, .send-mails button:focus {
+    background-color: var(--orange-light);
+}
+
+.send-mails button:active {
     background-color: var(--orange-dark);
 }
