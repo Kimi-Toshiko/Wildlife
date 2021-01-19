@@ -72,6 +72,11 @@ header {
     border: 1px solid var(--orange-main);
     border-radius: .2rem;
     padding: 0px 23px;
+    transition: .25s all linear;
+}
+
+.sign-in:hover, .sign-in:active, .sign-in:focus {
+    background-color: var(--orange-main);
 }
 
 .menu ul li a {
@@ -115,4 +120,14 @@ header {
     line-height: 26.95px;
     text-align: center;
     border: none;
+    border-radius: .25rem;
+    transition: .25s all linear;
+}
+
+.donation-info button:hover, .donation-info button:focus {
+    background-color: var(--orange-light);
+}
+
+.donation-info button:active {
+    background-color: var(--orange-dark);
 }
