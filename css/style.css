@@ -84,10 +84,20 @@ header {
 }
 
 .sign-in {
-    border: 1px solid var(--orange-main);
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1px;
+    border: 2px solid var(--orange-main);
     border-radius: .2rem;
     padding: 0px 23px;
     transition: .25s background-color linear;
+}
+
+.sign-in a {
+    position: relative;
+    top: -5px;
 }
 
 .sign-in:hover, .sign-in:active, .sign-in:focus {
@@ -102,12 +112,13 @@ header {
 }
 
 .menu ul li a img {
+    margin-top: -4px;
     width: 23.31px;
     height: 23.31px;
 }
 
 .donation-info {
-    margin-top: 120px;
+    margin-top: 137px;
     width: 274px;
 }
 
@@ -175,7 +186,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 120px;
-    margin-bottom: 239px;
+    margin-bottom: 242px;
 }
 
 .deer {
@@ -197,7 +208,7 @@ main {
 
 .info {
     position: relative;
-    top: 250px;
+    top: 248px;
 }
 
 .info h4 {
@@ -212,10 +223,11 @@ main {
     line-height: 27px;
     text-align: center;
     color: var(--font-light);
+    margin-top: 8px;
 }
 
 .articles-notification {
-    font-size: 27px;
+    font-size: 27px !important;
     line-height: 40.5px;
     text-align: center;
     color: var(--font-dark);
@@ -229,7 +241,8 @@ main {
 
 .send-mails input {
     padding: 15px;
-    width: 540px;
+    width: 508px;
+    margin-top: 2px;
     background-color: transparent;
     border-color: var(--font-grey);
     border-top-left-radius: .25rem;
@@ -277,9 +290,14 @@ footer .container {
     justify-content: space-between;
 }
 
+footer .menu ul li {
+    margin-right: 23px;
+}
+
 .social-networks {
     display: flex;
     flex-direction: row;
+    margin-top: 9px;
 }
 
 .network {
